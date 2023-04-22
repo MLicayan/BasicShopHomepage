@@ -1,0 +1,112 @@
+html body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    background-color: #01015C;
+    color: white;
+    padding: 60px;
+}
+
+.navBar{
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #3C60CE;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 20px;
+}
+
+a:hover{
+    color: white;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+}
+
+.products div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px;
+    width: 200px;
+}
+
+.products div input[type=button]{
+    margin-top: 20px;
+    color: white;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.products div input[type=button]:hover{
+    color: black;
+    background-color: white;
+    border: solid 1.5px black;
+    padding: 9px 19px;
+}
+
+.aboutUs{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.aboutUs h2{
+    text-align: center;
+}
+
+.aboutUs p{
+    text-align: justify;
+}
+
+.footer {
+    font-size: 60%;
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .navBar li {
+        display: block;
+        margin: 10px 0;
+    }
+    .main {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .products {
+        flex-wrap: wrap;
+    }
+    .products div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
